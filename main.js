@@ -3,6 +3,10 @@ const fsp = require('fs/promises');
 const jsonfile = require('jsonfile');
 const path = './config.json';
 
+function isEmptyObject(obj) {
+  return !Object.keys(obj).length;
+}
+
 async function processJson(input, output)
 {
 
@@ -10,7 +14,14 @@ async function processJson(input, output)
           data = await jsonfile.readFile(input);
           console.log(`producing output html from ${data.tests.length} tests json`)
           var htmlTemplate = await fsp.readFile('./template.html', 'utf8');
-          data_str = JSON.stringify(data); // TO-DO producing html
+          const data_str_arr = data.tests.map(
+            test => `<tr>
+			<td>${test.file}</td>
+			<td>${test.title}</td>
+			<td>${isEmptyObject(test.err) ? 'ok' : 'ko'}</td>
+			<td>${test.duration}</td>
+		</tr>`);
+		      const data_str = data_str_arr.join('\n')
           html_out = htmlTemplate.replace('**JSON-TEST-RESULTS**', data_str)
           await fsp.writeFile(output, html_out);
         } catch(error) {
@@ -19,4 +30,4 @@ async function processJson(input, output)
 
 }
 
-processJson('./input.json','./output.html');
+processJson('./tests.json','./tests.html');
