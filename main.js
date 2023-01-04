@@ -21,7 +21,7 @@ async function processJson(input, output)
 			<td>${isEmptyObject(test.err) ? 'ok' : 'ko'}</td>
 			<td>${test.duration}</td>
 		</tr>`);
-		      const data_str = data_str_arr.join('\n')
+          const data_str = data_str_arr.join('\n')
           html_out = htmlTemplate.replace('**JSON-TEST-RESULTS**', data_str)
           await fsp.writeFile(output, html_out);
         } catch(error) {
