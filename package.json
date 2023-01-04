@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-static-exporter",
+  "version": "1.0.0",
+  "description": "Node Javascript static export for test reporting ",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/giuliohome/nodejs-static-exporter.git"
+  },
+  "author": "Giulio",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/giuliohome/nodejs-static-exporter/issues"
+  },
+  "homepage": "https://github.com/giuliohome/nodejs-static-exporter#readme"
+}
