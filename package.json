@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/giuliohome/nodejs-static-exporter/issues"
   },
-  "homepage": "https://github.com/giuliohome/nodejs-static-exporter#readme"
+  "homepage": "https://github.com/giuliohome/nodejs-static-exporter#readme",
+  "dependencies": {
+    "jsonfile": "^6.1.0"
+  }
 }
