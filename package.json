@@ -4,7 +4,8 @@
   "description": "Node Javascript static export for test reporting ",
   "main": "main.js",
   "scripts": {
-    "test": "mocha --reporter mocha-json-output-reporter --reporter-options output=tests.json"
+    "test": "mocha --reporter mocha-json-output-reporter --reporter-options output=tests.json",
+    "export": "node main"
   },
   "repository": {
     "type": "git",
