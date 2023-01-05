@@ -20,6 +20,7 @@ async function processJson(input, output)
 			<td>${test.title}</td>
 			<td>${isEmptyObject(test.err) ? 'ok' : 'ko'}</td>
 			<td>${test.duration}</td>
+			<td>${test.attachments?.join(',')??'-'}</td>
 		</tr>`);
           const data_str = data_str_arr.join('\n')
           html_out = htmlTemplate.replace('**JSON-TEST-RESULTS**', data_str)

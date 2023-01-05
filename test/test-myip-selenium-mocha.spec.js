@@ -14,6 +14,8 @@ describe('Selenium Test - User Story', function() {
     await driver.quit();
   })
   it('IP Read Test - User Story', async function() {
+    this.test.myfield = 'extra info'
+    this.test.attachments = ['/absolut/path/to/file.png'];
     await driver.get("http://checkip.dyndns.org/");
     await driver.manage().window().setRect({ width: 1304, height: 739 });
 

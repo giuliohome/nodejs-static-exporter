@@ -19,11 +19,11 @@
   "homepage": "https://github.com/giuliohome/nodejs-static-exporter#readme",
   "dependencies": {
     "jsonfile": "^6.1.0",
+    "mocha-json-output-reporter": "github:giuliohome/mocha-json-output-reporter",
     "selenium-webdriver": "^4.7.1"
   },
   "devDependencies": {
     "chai": "*",
-    "mocha": "*",
-    "mocha-json-output-reporter": "^2.0.1"
+    "mocha": "*"
   }
 }
