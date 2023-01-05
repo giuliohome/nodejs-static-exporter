@@ -4,7 +4,7 @@
   "description": "Node Javascript static export for test reporting ",
   "main": "main.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --reporter mocha-json-output-reporter --reporter-options output=tests.json"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "chai": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "mocha-json-output-reporter": "^2.0.1"
   }
 }

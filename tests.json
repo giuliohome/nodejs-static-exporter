@@ -1,36 +1,32 @@
 {
   "stats": {
-    "suites": 3,
-    "tests": 9,
-    "passes": 9,
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2021-07-15T20:06:25.845Z",
-    "end": "2021-07-15T20:06:27.489Z",
-    "duration": 1644
+    "start": "2023-01-05T08:46:40.169Z",
+    "end": "2023-01-05T08:46:44.641Z",
+    "duration": 4472
   },
   "tests": [
     {
-      "title": "should success registration with granted access",
-      "fullTitle": "account invitation behaviour account invitation behaviour with the enabled access-policy should success registration with granted access",
-      "file": "/tests/account.spec.js",
-      "duration": 235,
+      "title": "IP Read Test - User Story",
+      "fullTitle": "Selenium Test - User Story IP Read Test - User Story",
+      "file": "C:\\giulio\\eni\\tips\\gitlab\\Selenium\\sd-dso-demo\\exported\\nodejs\\test\\test-myip-selenium-mocha.spec.js",
+      "duration": 578,
       "currentRetry": 0,
       "err": {}
-    },
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
     {
-      "title": "success:becomeMemberByInvitationCode",
-      "fullTitle": "account invitation behaviour account invitation behaviour with the enabled access-policy success:becomeMemberByInvitationCode",
-      "file": "/tests/account.spec.js",
-      "duration": 63,
-      "currentRetry": 0,
-      "err": {}
-    },
-    {
-      "title": "failed:becomeMemberByInvitationCode:invalidInviteToken:wrongUser ",
-      "fullTitle": "account invitation behaviour account invitation behaviour with the enabled access-policy failed:becomeMemberByInvitationCode:invalidInviteToken:wrongUser ",
-      "file": "/tests/account.spec.js",
-      "duration": 18,
+      "title": "IP Read Test - User Story",
+      "fullTitle": "Selenium Test - User Story IP Read Test - User Story",
+      "file": "C:\\giulio\\eni\\tips\\gitlab\\Selenium\\sd-dso-demo\\exported\\nodejs\\test\\test-myip-selenium-mocha.spec.js",
+      "duration": 578,
       "currentRetry": 0,
       "err": {}
     }
