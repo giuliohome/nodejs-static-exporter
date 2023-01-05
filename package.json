@@ -4,7 +4,7 @@
   "description": "Node Javascript static export for test reporting ",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,11 @@
   },
   "homepage": "https://github.com/giuliohome/nodejs-static-exporter#readme",
   "dependencies": {
-    "jsonfile": "^6.1.0"
+    "jsonfile": "^6.1.0",
+    "selenium-webdriver": "^4.7.1"
+  },
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
   }
 }
