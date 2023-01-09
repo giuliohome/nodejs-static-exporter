@@ -1,6 +1,11 @@
 # nodejs-static-exporter
 Node Javascript static export for test reporting
 
+First time, install https://github.com/giuliohome/mocha-json-output-reporter
+```bash
+npm install
+```
+
 To run your selenium tests with mocha
 ```bash
 npm test
